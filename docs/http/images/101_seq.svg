@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="363px" preserveAspectRatio="none" style="width:459px;height:363px;" version="1.1" viewBox="0 0 459 363" width="459px" zoomAndPan="magnify"><defs><filter height="300%" id="foh4a80pg4pzv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#foh4a80pg4pzv)" height="266.5386" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="33" y="48.0986"/><rect fill="#FFFFFF" filter="url(#foh4a80pg4pzv)" height="124.7949" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="249" y="69.0474"/><rect fill="#FFFFFF" filter="url(#foh4a80pg4pzv)" height="37.9487" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="249" y="276.6885"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="38" x2="38" y1="38.0986" y2="323.6372"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="254" x2="254" y1="38.0986" y2="323.6372"/><rect fill="#FEFECE" filter="url(#foh4a80pg4pzv)" height="30.0986" style="stroke: #A80036; stroke-width: 1.5;" width="56" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="15" y="23.1318">客户端</text><rect fill="#FEFECE" filter="url(#foh4a80pg4pzv)" height="30.0986" style="stroke: #A80036; stroke-width: 1.5;" width="56" x="8" y="322.6372"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="15" y="342.769">客户端</text><rect fill="#FFA500" filter="url(#foh4a80pg4pzv)" height="30.0986" style="stroke: #A80036; stroke-width: 1.5;" width="56" x="224" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="231" y="23.1318">服务端</text><rect fill="#FFA500" filter="url(#foh4a80pg4pzv)" height="30.0986" style="stroke: #A80036; stroke-width: 1.5;" width="56" x="224" y="322.6372"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="231" y="342.769">服务端</text><rect fill="#FFFFFF" filter="url(#foh4a80pg4pzv)" height="266.5386" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="33" y="48.0986"/><rect fill="#FFFFFF" filter="url(#foh4a80pg4pzv)" height="124.7949" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="249" y="69.0474"/><rect fill="#FFFFFF" filter="url(#foh4a80pg4pzv)" height="37.9487" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="249" y="276.6885"/><polygon fill="#A80036" points="237,65.0474,247,69.0474,237,73.0474,241,69.0474" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="43" x2="243" y1="69.0474" y2="69.0474"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="50" y="64.2925">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="117" x="62" y="64.2925">请求服务器更换协议</text><path d="M48,82.0474 L48,121.0474 L194,121.0474 L194,92.0474 L184,82.0474 L48,82.0474 " fill="#FBFB77" filter="url(#foh4a80pg4pzv)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M184,82.0474 L184,92.0474 L194,92.0474 L184,82.0474 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="54" y="99.2412">Connection: Upgrade</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="58" y="114.1899">Upgrade: protocols</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="259" x2="301" y1="151.8936" y2="151.8936"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="301" x2="301" y1="151.8936" y2="164.8936"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="260" x2="301" y1="164.8936" y2="164.8936"/><polygon fill="#A80036" points="270,160.8936,260,164.8936,270,168.8936,266,164.8936" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="266" y="147.1387">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="169" x="278" y="147.1387">检查需要升级的协议是否支持</text><polygon fill="#A80036" points="54,189.8423,44,193.8423,54,197.8423,50,193.8423" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="48" x2="253" y1="193.8423" y2="193.8423"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="60" y="189.0874">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="170" x="72" y="189.0874">返回 101 Switching Protocols</text><path d="M48,206.8423 L48,245.8423 L194,245.8423 L194,216.8423 L184,206.8423 L48,206.8423 " fill="#FBFB77" filter="url(#foh4a80pg4pzv)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M184,206.8423 L184,216.8423 L194,216.8423 L184,206.8423 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="54" y="224.0361">Connection: Upgrade</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="58" y="238.9849">Upgrade: protocols</text><polygon fill="#A80036" points="237,272.6885,247,276.6885,237,280.6885,241,276.6885" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="43" x2="243" y1="276.6885" y2="276.6885"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="50" y="271.9336">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="117" x="62" y="271.9336">以新的协议发起请求</text><polygon fill="#A80036" points="54,301.6372,44,305.6372,54,309.6372,50,305.6372" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="48" x2="248" y1="305.6372" y2="305.6372"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="60" y="300.8823">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="76" y="300.8823"/><!--
+@startuml
+
+autonumber
+
+participant "客户端" as Browser
+participant "服务端" as Server #orange
+
+
+activate Browser
+
+Browser -> Server: 请求服务器更换协议
+note right of Browser: Connection: Upgrade \n Upgrade: protocols
+activate Server
+
+Server -> Server: 检查需要升级的协议是否支持
+
+Server - -> Browser: 返回 101 Switching Protocols
+note right of Browser: Connection: Upgrade \n Upgrade: protocols
+deactivate Server
+
+Browser -> Server: 以新的协议发起请求
+activate Server
+
+Server - -> Browser
+
+
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 19:04:44 CST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_161-b14
+Operating System: Linux
+OS Version: 3.10.0-327.22.2.el7.x86_64
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

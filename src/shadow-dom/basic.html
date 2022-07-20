@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow DOM</title>
+</head>
+
+<body>
+  <colored-text id="app" text="hello shadow dom" color='green'>
+    <div slot="title">标题</div>
+    <div slot="desc">描述</div>
+  </colored-text>
+  <template id='color-text-tpl'>
+    <style>
+      .big-font{
+        font-size: 26px;
+      }
+      span{
+        font-weight: bold;
+      }
+      [name='title']{
+        color: red;
+      }
+      [name='desc']{
+        font-size: 10px;
+      }
+    </style>
+    <slot name="title"></slot>
+    <slot name="desc"></slot>
+  </template>
+</body>
+<script>
+
+  class ColoredText extends HTMLElement {
+    constructor() {
+      super()
+      // 创建 shadow root，关于 mode 我们后面会讲到
+      const root = this.attachShadow({ mode: "open" })
+      // 获取 template 元素
+      const template = document.getElementById('color-text-tpl')
+      // 这个 templateContent 是一个 DocumentFragment
+      const templateContent = template.content;
+      // 创建内部 DOM 树
+      const box = document.createElement('span')
+      // 获取 text 属性的值，没提供的话显示'default text'
+      const text = this.getAttribute('text') || 'default text'
+      // 获取 color 属性的值，没提供的话默认红色
+      const color = this.getAttribute('color') || 'red'
+      // 设置文字
+      box.innerText = text
+      // 设置颜色
+      box.style.color = color
+      // 直接使用 <style> 标签里的样式
+      box.setAttribute('class', 'big-font')
+      // 添加事件处理
+      box.addEventListener('click', () => {
+        alert('click me')
+      })
+      // 把 box 添加到 template 中
+      templateContent.appendChild(box)
+      // 克隆 template 后，追加到 root 上
+      root.appendChild(templateContent.cloneNode(true))
+    }
+    connectedCallback() {
+      console.info('connected')
+    }
+    disconnectedCallback() {
+      console.info('disconnected')
+    }
+    attributeChangedCallback() {
+      console.info('attr changed')
+    }
+  }
+
+  customElements.define('colored-text', ColoredText)
+
+
+</script>
+
+</html>

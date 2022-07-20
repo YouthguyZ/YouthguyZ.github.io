@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数节流</title>
+  <style>
+    body {
+      height: 2000px;
+      background: linear-gradient(grey, lightgreen, blue);
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+<script>
+
+  /**
+   * @param fn 回调函数
+   * @param timeGap 时间间隔
+   **/
+  // function throttle(fn, delay) {
+  //   let first = true, timer = null
+  //   return (...args) => {
+  //     if (first) {
+  //       fn.apply(this, args)
+  //       first = false
+  //     } else {
+  //       if (timer) return
+  //       timer = setTimeout(() => {
+  //         clearTimeout(timer)
+  //         fn.apply(this, args)
+  //         timer = null
+  //       }, delay)
+  //     }
+  //   }
+  // }
+
+  function throttle(fn, delay) {
+    let last = null;
+    return (...args) => {
+      if (!last) {
+        fn.apply(this, args)
+        last = Date.now()
+      } else {
+        if (Date.now() - last > delay) {
+          fn.apply(this, args)
+          last = Date.now()
+        }
+      }
+    }
+  }
+
+  function onScroll(e) {
+    console.info('window scrolled')
+  }
+
+  const throtteledScroll = throttle(onScroll, 1000)
+  window.onscroll = throtteledScroll
+</script>
+
+</html>

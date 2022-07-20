@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash ./deploy.sh",
+    "postdeploy": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-pwa": "^1.2.0",
+    "vuepress": "^1.5.0",
+    "vuepress-plugin-medium-zoom": "^1.1.8",
+    "watchpack": "^1.6.1"
+  },
+  "dependencies": {
+    "vue-google-adsense": "^1.9.2",
+    "vue-script2": "^2.1.0"
+  },
+  "resolutions": {
+    "watchpack": "1.6.1"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventLoop</title>
+  <script>
+
+    console.info('start')
+
+    setTimeout(() => {
+      console.info('setTimeout0')
+      makePromise(3)
+    }, 0)
+
+    setTimeout(() => {
+      console.info('setTimeout100')
+    }, 100)
+
+    makePromise(1)
+    makePromise(2)
+
+    console.info('end')
+
+    function makePromise(message) {
+      new Promise((resolve, reject) => {
+        console.info('promise' + message)
+        resolve()
+      }).then(res => {
+        console.info('then1:' + message)
+      }).then(res => {
+        console.info('then2:' + message)
+      })
+    }
+
+
+    // start promise1 promise2 end then1:1 then1:2 then2:1 then2:2 setTimeout0 promise3 then1:3 then2:3 setTimeout100
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

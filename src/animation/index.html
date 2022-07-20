@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+</head>
+<style>
+  .box-1 {
+    height: 50px;
+    width: 50px;
+    background-color: lightcoral;
+    animation: move, enlarge;
+    animation-duration: 3s, 2s;
+  }
+
+  @keyframes move {
+    from {
+      margin-left: 0;
+    }
+
+    to {
+      margin-left: 100px;
+    }
+  }
+
+  .box-2 {
+    border: 1px solid grey;
+    height: 300px;
+    width: 300px;
+  }
+
+  .rect {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    animation-name: circle-move;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes circle-move{
+    25% {
+      transform: translateX(250px);
+      background-color: aqua;
+    }
+    50% {
+      transform: translate(250px, 250px);
+      background-color: blueviolet;
+    }
+    75% {
+      transform: translateY(250px);
+      background-color: bisque;
+    }
+  }
+
+  @keyframes enlarge {
+    100%{
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .box-3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation-name: change-color;
+    animation-delay: 2s;
+    animation-duration: 3s;
+  }
+
+  @keyframes change-color {
+    0%{
+      background: red;
+    }
+    100%{
+      background-color: blue;
+    }
+  }
+
+  .box-4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box-4 div{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    animation-name: enlarge;
+    color: white;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+  }
+  .box-4 div:nth-child(1) {
+    animation-direction: normal;
+  }
+  .box-4 div:nth-child(2) {
+    animation-direction: reverse;
+  }
+  .box-4 div:nth-child(3) {
+    animation-direction: alternate;
+  }
+  .box-4 div:nth-child(4) {
+    animation-direction: alternate-reverse;
+  }
+
+  .box-5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box-5 div{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    animation-name: enlarge1;
+    color: white;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+  .box-5 div:nth-child(1) {
+    animation-fill-mode: none;
+  }
+  .box-5 div:nth-child(2) {
+    animation-fill-mode: forwards;
+  }
+  .box-5 div:nth-child(3) {
+    animation-fill-mode: backwards;
+  }
+  .box-5 div:nth-child(4) {
+    animation-fill-mode: both;
+  }
+  @keyframes enlarge1 {
+    0%{
+      background-color: red;
+    }
+    100%{
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .box-6{
+    height: 80px;
+    width: 80px;
+    border: 1px solid #eaeeae;
+  }
+  .box-6 div{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    animation-name: step-move;
+    animation-duration: 4s;
+  }
+  .box-6 div:first-child{
+    /* 两个帧之前的步长 */
+    animation-timing-function: steps(2, start);
+  }
+  @keyframes step-move {
+    25%{
+      transform: translateX(40px);
+    }
+    50%{
+      transform: translate(40px, 40px);
+    }
+    75%{
+      transform: translateY(40px);
+    }
+  }
+
+  .box-7{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .box-7:hover{
+    animation-play-state: paused;
+  }
+</style>
+
+<body>
+  <div class="box-1"></div>
+  <hr>
+  <div class="box-2">
+    <div class="rect"></div>
+  </div>
+  <hr>
+  <div class="box-3"></div>
+  <hr>
+  <div class="box-4">
+    <div>normal</div>
+    <div>reverse</div>
+    <div>alternate</div>
+    <div>alternate-reverse</div>
+  </div>
+  <hr>
+  <div class="box-5">
+    <div>none</div>
+    <div>forwards</div>
+    <div>backwords</div>
+    <div>both</div>
+  </div>
+  <hr>
+  <div class="box-6">
+    <div></div>
+  </div>
+  <div class="box-7">
+  </div>
+
+</body>
+
+</html>

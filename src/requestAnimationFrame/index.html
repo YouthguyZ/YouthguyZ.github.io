@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>requestAnimationFrame</title>
+</head>
+
+<body>
+  <progress id="box" value="0" max="100"></progress>
+
+  <button id="btn">Run</button>
+
+</body>
+<script>
+  let box = document.getElementById('box')
+  let btn = document.getElementById('btn')
+  let progress = 0;
+
+  function run(ts) {
+    console.info(ts)
+    let val = box.value;
+    if (val < 100) {
+      box.value += 1;
+      window.requestAnimationFrame(run);
+    }
+  }
+
+  btn.addEventListener('click', () => {
+    requestAnimationFrame(run)
+  })
+
+</script>
+
+</html>

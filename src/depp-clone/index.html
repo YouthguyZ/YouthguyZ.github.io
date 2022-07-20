@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>深拷贝</title>
+  <script>
+    // 没有考虑数组等
+    function deepClone1(obj) {
+      if (typeof obj === "object") {
+        let tmp = {}
+        for (let key in obj) {
+          tmp[key] = deepClone1(obj[key])
+        }
+        return tmp;
+      } else {
+        return obj;
+      }
+    }
+
+    // 没有考虑循环引用问题
+    function deepClone2(obj) {
+      if (typeof obj === "object") {
+        let tmp = Array.isArray(obj) ? [] : {}
+        for (let key in obj) {
+          tmp[key] = deepClone1(obj[key])
+        }
+        return tmp;
+      } else {
+        return obj;
+      }
+    }
+
+
+    // 不使用递归
+    function deepCloneWithStack(obj) {
+  
+    }
+
+
+    let person = {
+      name: 'Jerry',
+      address: {
+        city: 'Hefei',
+        province: 'Anhui',
+        street: {
+          name: 'Baker Street',
+          num: '221B'
+        }
+      },
+      likes: ['A', 'B', 'C', { name: 'D' }],
+    }
+    // person.me = person;
+
+    // let copy = deepClone1(person)
+    // let copy = deepClone2(person.likes)
+
+    let copy = deepCloneWithStack(person)
+
+
+    console.info(copy.address === person.address)
+    console.info(copy.address.street === person.address.street)
+    console.info(copy.likes === person.likes)
+
+    console.info(copy)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

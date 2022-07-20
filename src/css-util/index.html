@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS工具大合集</title>
+  <style>
+    section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .triangle{
+      height: 0;
+      width: 0;
+      border: 100px solid transparent;
+      border-top-color: aquamarine;
+    }
+    .text-overflow{
+      width: 100%;
+      border: 5px solid lightgreen;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h3>绘制三角形</h3>
+    <div class="triangle"></div>
+  </section>
+  <hr>
+  <section>
+    <h3>文字溢出显示省略号-单行文本</h3>
+    <div class="text-overflow">
+      Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
+    </div>
+  </section>
+</body>
+</html>

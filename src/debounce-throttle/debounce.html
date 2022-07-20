@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数防抖</title>
+</head>
+
+<body>
+  请输入关键字进行搜索：<input type="text" id="keyword">
+</body>
+<script>
+  function debounce(fn, delay) {
+    let timer = null
+    return (...args) => {
+      clearTimeout(timer)
+      timer = setTimeout(() => {
+        fn.apply(this, args)
+      }, delay)
+    }
+  }
+
+  const input = document.querySelector('#keyword')
+
+  function onInput(e) {
+    console.info('search:', e.target.value)
+  }
+
+  const debounceOnInput = debounce(onInput, 1000);
+
+  input.addEventListener('input', debounceOnInput)
+
+</script>
+
+</html>

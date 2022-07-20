@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 20px;
+      margin: 30px;
+      padding: 30px;
+      border: 5px solid;
+      background: lightcoral;
+    }
+
+    .standard-box {
+      box-sizing: content-box;
+    }
+
+    .ie-box {
+      box-sizing: border-box;
+    }
+
+    .bfc-box {
+      background-color: lightcoral;
+      border: 1px solid blue;
+      display: flow-root;
+    }
+    .float {
+      float: left;
+      margin: 10px;
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      background-color: lightgreen;
+    }
+
+    .content{
+      width: 300px;
+      height: 200px;
+      background: lightcoral;
+    }
+    .left{
+      height: 50px;
+      width: 80px;
+      float: left;
+      background: lightgreen;
+    }
+    .right{
+      overflow: hidden;
+    }
+
+    .father p{
+      height: 100px;
+      width: 100px;
+      background-color: lightcoral;
+    }
+    .son-1{
+      margin-bottom: 100px;
+    }
+    .son-2{
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box standard-box">
+  </div>
+  <hr>
+  <div class="box ie-box">
+  </div>
+  <hr>
+  <div class="bfc-box">
+    <div class="float">湖人总冠军</div>
+    <p>Hello BFC</p>
+  </div>
+  <hr>
+  <div class="content">
+    <div class="left">菜单</div>
+    <div class="right">
+      触发bfc的条件：float的值不为none。
+      overflow的值不为visible。(这个是最推荐开启bfc的,副作用最小)
+      position的值不为relative和static。
+      display的值为table-cell, table-caption, inline-block中的任何一个。
+    </div>
+  </div>
+  <hr>
+  <div class="father">
+    <p class="son-1"></p>
+    <div style="overflow: hidden;">
+      <p class="son-2"></p>
+    </div>
+  </div>
+  <hr>
+</body>
+
+</html>

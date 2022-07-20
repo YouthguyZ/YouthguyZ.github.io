@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template & Slot</title>
+</head>
+<body>
+  <p>hello</p>
+  <!-- 
+    直接使用template的话，内部的style会影响外部的。
+    如果放到自定义的组件中的话，那么作用域就是组件层级的。
+  -->
+  <template id="tmp">
+    <style>
+      p{
+        color: red;
+      }
+    </style>
+    <p>
+      <slot name="default">default slot</slot>
+    </p>
+    <slot name="tail"></slot>
+  </template>
+  <my-para>
+    <div slot="tail">hello slot</div>
+    <div slot="deafult">hello default</div>
+  </my-para>
+</body>
+<script>
+
+  // document.body.appendChild(content.cloneNode(true))
+  customElements.define('my-para', class extends HTMLElement{
+    constructor() {
+      super()
+      const tpl = document.getElementById('tmp')
+      const content = tpl.content
+      const shadowRoot = this.attachShadow({mode:"open"})
+        .appendChild(content.cloneNode(true))
+    }
+  })
+</script>
+</html>

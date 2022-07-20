@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid布局演示</title>
+  <style>
+    body {
+      padding: 100px;
+      background-color: #eaeaea;
+    }
+
+    .box {
+      border: 1px solid grey;
+      display: grid;
+      width: 300px;
+      height: 300px;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .box div:nth-child(1) {
+      background-color: lightblue;
+      grid-row: 1/4;
+    }
+
+    .box div:nth-child(2) {
+      background-color: lightgreen;
+      grid-column: 2/4;
+    }
+
+    .box div:nth-child(3) {
+      background-color: lightcoral;
+      grid-row: 2/4;
+    }
+
+    .box div:nth-child(4) {
+      background-color: lightseagreen;
+      grid-row: 2/4;
+    }
+
+
+    .normal-box{
+      width: 300px;
+      height: 300px;
+      border: 1px solid grey;
+      display: flex;
+    }
+    
+    .item1{
+      background-color: lightblue;
+      height: 100%;
+      flex: 1;
+    }
+
+    .item2{
+      flex: 2;
+    }
+
+    .item3{
+      background-color: lightgreen;
+      height: 100px;
+    }
+
+    .item4{
+      background-color: lightcoral;
+      width: 100px;
+      height: 200px;
+      float: left;
+    }
+    .item5{
+      background-color: lightseagreen;
+      width: 100px;
+      height: 200px;
+      float: right;
+    }
+
+    .row{
+      border: 1px solid grey;
+      width: 300px;
+      height: 100px;
+      display: grid;
+    }
+
+    .row div{
+      background-color: lightblue;
+      border: 1px solid grey;
+      box-sizing: border-box;
+    }
+
+    .row-1{
+      grid-template-columns: 100px 100px 100px;
+    }
+
+    .row-2{
+      grid-template-columns: repeat(3, 100px);
+    }
+
+    .row-3{
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .span-box{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      height: 100px;
+      width: 100%;
+      border: 1px solid grey;
+    }
+
+    .col-1{
+      grid-column: span 1;
+    }
+
+    .col-3{
+      grid-column: span 3;
+    }
+
+    .col-4{
+      grid-column: span 4;
+    }
+
+    .col-6{
+      grid-column: span 6;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="normal-box">
+    <div class="item1"></div>
+    <div class="item2">
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+    </div>
+  </div>
+  <br>
+  <div class="box">
+    <div>grid-row: 1/4;</div>
+    <div>grid-column: 2/4;</div>
+    <div>grid-row: 2/4;</div>
+    <div>grid-row: 2/4;</div>
+  </div>
+  <br>
+  <div style="display: flex; justify-content: space-evenly;">
+    <div class="row row-1">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="row row-2">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="row row-3">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <br>
+  <div class="span-box">
+    <div class="col-1" style="background-color: blue;"></div>
+    <div class="col-6" style="background-color: red;"></div>
+    <div class="col-3" style="background-color: lightskyblue;"></div>
+  </div>
+</body>
+
+</html>
