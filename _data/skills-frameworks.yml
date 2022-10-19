@@ -1,5 +1,5 @@
-- name: Selenium
+- name: vue
   weight: 5
 
-- name: Allure
-  weight: 4
+- name: react
+  weight: 3

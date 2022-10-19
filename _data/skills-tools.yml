@@ -4,19 +4,19 @@
 - name: Git
   weight: 5
 
-- name: Bitbucket
+- name: Github
   weight: 5
 
-- name: SQL
+- name: Xmind
   weight: 5
 
-- name: Jira
+- name: Typora
   weight: 4
 
-- name: Bash
+- name: Idea
   weight: 4
 
-- name: Jenkins
+- name: Postman
   weight: 3
 
 - name: Docker
