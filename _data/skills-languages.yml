@@ -1,0 +1,11 @@
+- name: JS
+  weight: 5
+
+- name: css
+  weight: 4
+
+- name: vue
+  weight: 4
+
+- name: react
+  weight: 3
