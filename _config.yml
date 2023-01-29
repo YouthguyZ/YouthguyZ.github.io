@@ -1,61 +1,108 @@
-title: 张畏也
-description: YouthguyZ's Personal Website
-baseurl: ""
+# Site settings
+title: 我不知啊
+SEOTitle: 我不知啊
+header-img: "img/home-bg.webp"
+email: X2430442963X@outlook.com
+description: "和光同尘."
+keyword: "张思璇, CheongSzesuen, HTML, 网站, CSS, BLOG，blog, ZSX, cheongszesuen, cheong-szesuen"
+url: "https://wbza.tk" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
-username: 张畏也
-typing_text: Software Engineer / QA Tester
+# 发布未来日期的文章或收集文件
+future: true
 
-email: YoungguyZ@outlook.com
-telegram_username: YouthguyZ
-linkedin_username: YouthguyZ
-github_username: YouthguyZ
-facebook_username: YouthguyZ
-viber_number: 995599014780
+# SNS settings
+RSS: false
+#weibo_username_none: CheongSzesuen
+#weibo_username_u: CheongSzesuen
+zhihu_username: luminouszhu-jiang-wan
+github_username: CheongSzesuen
+github_username: Cheong-Szesuen
+youtube_channel: UCYEbo0NW0UG1IrzD9X4_V7Q
+#twitter_username: CheongSzesuen
+#facebook_username:  CheongSzesuen
+#linkedin_username:  firstname-lastname-idxxxx
 
-show_aboutme_card: false
-about_me_title: About Me
-about_me_description: <empty>
-
-show_skills_card: true
-skills_title: Skills
-
-show_timeline_card: true
-timeline_title: Education & Experience
-cv_download_link: https://drive.google.com/file/d/1qeBuJLUDnrkYs4SglcZoibFnbjU24-hx/view
-
-show_projects_card: true
-show_projects: false
-projects_title: Work Projects
-show_os_projects: true
-os_projects_title: Portfolio Projects
-
-show_contact_card: true
-contact_title: Contacts
-contact_description: Feel free to contact me wherever is comfortable for you
-
-repository: daweedkob/daweedkob.github.io
-github_pages:
-  - sorting_algos
-  - character_encoder
-  - daweedkob.github.io
-  
-projects:
-  sort_by: stars
-  exclude:
-    archived: true
-    forks: true
-    projects:
-      - daweedkob
-
-plugins:
-  - "jekyll-github-metadata"
-
+# Build settings
+# 从2016年开始，GitHub 页面不支持“ pygments”，改用“ rouge”突出显示。
+highlighter: rouge
+permalink: pretty
+paginate: 10
 exclude:
   [
-    "_assets",
-    "Gemfile",
-    "Gemfile.lock",
-    "gulpfile.js",
+    "less",
     "node_modules",
+    "Gruntfile.js",
     "package.json",
+    "README.md",
+    "README.zh.md",
+  ]
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`(如果您想自定义锚点，请查看行: ‘ post.html’的181)
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:(如果你在中国有时区问题(例如 # 68) ，不要评论使用这个:)
+#timezone: CN
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Disqus settings
+disqus_username: CheongSzesuen
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  repo: qiubaiying.github.io    #仓库名称
+  owner: qiubaiying    #github用户名
+  admin: qiubaiying
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+# Netease settings
+netease_comment: false
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+#ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
+
+# Sidebar settings
+sidebar: true # 是否使用侧栏
+sidebar-about-description: "和光同尘"
+sidebar-avatar: /img/Cheong Szesuen.jpg # 使用绝对路径，绝对路径是从根目录的文件夹开始直到目标的文件
+# Featured Tags
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 1 # 如果标签使用的次数大于指定的值，则会出现在右侧
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+# Friends
+friends:
+  [
+    { title: "我的个人网站", href: "http://cheongszesuen.cf/" },
+    { title: "Hotel Zulu", href: "https://https://dangerous-hhz.rth1.one/" },
   ]
