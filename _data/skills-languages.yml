@@ -1,9 +1,0 @@
-- name: JS
-  weight: 5
-
-- name: CSS
-  weight: 3
-
-- name: TS
-  weight: 2
-
