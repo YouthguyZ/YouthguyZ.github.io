@@ -1,11 +1,11 @@
 # Site settings
-title: 我不知啊
-SEOTitle: 我不知啊
+title: 张畏也
+SEOTitle: 张畏也
 header-img: "img/home-bg.webp"
 email: X2430442963X@outlook.com
-description: "和光同尘."
-keyword: "张思璇, CheongSzesuen, HTML, 网站, CSS, BLOG，blog, ZSX, cheongszesuen, cheong-szesuen"
-url: "https://wbza.tk" # your host, for absolute URL
+description: "一蓑烟雨任平生、"
+keyword: "张畏也, youthguyz, HTML, 网站, CSS, BLOG，blog, ZSX, youthguyz, youthguyz"
+url: "https://youthguyz.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # 发布未来日期的文章或收集文件
@@ -15,10 +15,10 @@ future: true
 RSS: false
 #weibo_username_none: CheongSzesuen
 #weibo_username_u: CheongSzesuen
-zhihu_username: luminouszhu-jiang-wan
-github_username: CheongSzesuen
-github_username: Cheong-Szesuen
-youtube_channel: UCYEbo0NW0UG1IrzD9X4_V7Q
+zhihu_username: https://www.zhihu.com/people/zhe-bie-29
+github_username: youthguyz
+# github_username: Cheong-Szesuen
+# youtube_channel: UCYEbo0NW0UG1IrzD9X4_V7Q
 #twitter_username: CheongSzesuen
 #facebook_username:  CheongSzesuen
 #linkedin_username:  firstname-lastname-idxxxx
@@ -87,8 +87,8 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true # 是否使用侧栏
-sidebar-about-description: "和光同尘"
-sidebar-avatar: /img/Cheong Szesuen.jpg # 使用绝对路径，绝对路径是从根目录的文件夹开始直到目标的文件
+sidebar-about-description: "一蓑烟雨任平生、"
+sidebar-avatar: /img/photo.jpg # 使用绝对路径，绝对路径是从根目录的文件夹开始直到目标的文件
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
 featured-condition-size: 1 # 如果标签使用的次数大于指定的值，则会出现在右侧
@@ -103,6 +103,7 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "我的个人网站", href: "http://cheongszesuen.cf/" },
-    { title: "Hotel Zulu", href: "https://https://dangerous-hhz.rth1.one/" },
+    { title: "我的个人网站", href: "https://youthguyz.github.io" },
+    # { title: "Hotel Zulu", href: "https://https://dangerous-hhz.rth1.one/" },
+    { title: "公众号", href: "https://mp.weixin.qq.com/s/8iI1DH5dQW3iYUeQ6uxnKg" },
   ]
