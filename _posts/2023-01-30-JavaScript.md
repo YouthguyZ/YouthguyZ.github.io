@@ -1,14 +1,14 @@
-```
+---
 layout:     post
-title:      "Hello 2015"
-subtitle:   " \"Hello World, Hello Blog\""
-date:       2023-01-30 
-author:     "张畏也"
-header-img: "img/post-bg-2015.jpg"
+title:      JavaScript
+subtitle:   前端学习之旅
+date:       2023-01-30 21-00-00
+author:     张畏也
+header-img: img/post-bg-2015.jpg
 catalog: true
 tags:
     - javascript
-```
+---
 
 ## JavaScript之旅
 
