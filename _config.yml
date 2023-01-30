@@ -1,8 +1,8 @@
 # Site settings
 title: 张畏也
 SEOTitle: 张畏也
-header-img: "img/home-bg.webp"
-email: X2430442963X@outlook.com
+header-img: "img/home-bg.jpg"
+email: YoungguyZ@outlook.com
 description: "一蓑烟雨任平生、"
 keyword: "张畏也, youthguyz, HTML, 网站, CSS, BLOG，blog, ZSX, youthguyz, youthguyz"
 url: "https://youthguyz.github.io" # your host, for absolute URL
@@ -15,7 +15,7 @@ future: true
 RSS: false
 #weibo_username_none: CheongSzesuen
 #weibo_username_u: CheongSzesuen
-zhihu_username: https://www.zhihu.com/people/zhe-bie-29
+zhihu_username: zhe-bie-29
 github_username: youthguyz
 # github_username: Cheong-Szesuen
 # youtube_channel: UCYEbo0NW0UG1IrzD9X4_V7Q

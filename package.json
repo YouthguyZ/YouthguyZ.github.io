@@ -1,14 +1,14 @@
 {
-    "name": "我不知啊",
-    "title": "我不知啊",
-    "author": "CheongSzesuen <X2430442963X@outlook.com>",
+    "name": "张畏也",
+    "title": "张畏也",
+    "author": "youthguyz <YoungguyZ@outlook.com>",
     "version": "1.8.2",
-    "homepage": "http://cheong-szesuen.github.io",
+    "homepage": "http://youthguyz.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Cheong-Szesuen/Cheong-Szesuen.github.io"
+        "url": "https://github.com/youthguyz/youthguyz.github.io"
     },
-    "bugs": "https://github.com/Cheong-Szesuen/Cheong-Szesuen.github.io/issues",
+    "bugs": "https://github.com/youthguyz/youthguyz.github.io/issues",
     "devDependencies": {
         "grunt": ">=1.3.0",
         "grunt-banner": "~0.2.3",
