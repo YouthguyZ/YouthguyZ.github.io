@@ -7,7 +7,7 @@ author:     张畏也
 header-img: img/post-bg-2015.jpg
 catalog: true
 tags:
-    - javascript
+    - JavaScript
 ---
 
 ## JavaScript之旅
