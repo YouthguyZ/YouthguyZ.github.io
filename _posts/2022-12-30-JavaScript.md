@@ -2,7 +2,7 @@
 layout:     post
 title:      JavaScript
 subtitle:   前端学习之旅
-date:       2023-01-30 21-00-00
+date:       2022-12-30 21-00-00
 author:     张畏也
 header-img: img/post-bg-2015.jpg
 catalog: true
